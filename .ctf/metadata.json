@@ -4,11 +4,5 @@
   "question": "Abuse the upload to place a file the application never meant to accept or serve, such as an HTML page with your script or a file outside the upload folder.",
   "category": "WEB",
   "difficulty": 2,
-  "evidence_kind": "SECRET",
-  "capabilities": [
-    "file-upload",
-    "path-traversal",
-    "stored-xss",
-    "upload"
-  ]
+  "evidence_kind": "SECRET"
 }
