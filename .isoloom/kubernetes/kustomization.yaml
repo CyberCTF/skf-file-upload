@@ -12,3 +12,4 @@ configMapGenerator:
   - name: isoloom-scripts
     files:
       - checks__upload.sh=../../checks/upload.sh
+      - ctf__flag.sh=../../ctf/flag.sh

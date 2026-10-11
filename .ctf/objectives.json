@@ -1,0 +1,43 @@
+{
+  "objectives": [
+    {
+      "key": "main",
+      "title": "Read the flag",
+      "prompt": "Abuse the file upload and retrieve the flag from /ctf/flag.",
+      "check": {
+        "evidence": "SECRET",
+        "format": "FLAG{%s}"
+      },
+      "dev": "FLAG{dev-skf-file-upload}",
+      "hints": [
+        "The server keeps the file name the client sends.",
+        "Read about unrestricted file upload and how client-supplied file names are trusted."
+      ],
+      "steps": [
+        {
+          "key": "folder",
+          "title": "Find the destination",
+          "prompt": "In which folder does the application save uploads?",
+          "check": {
+            "answer": [
+              "uploads",
+              "uploads/"
+            ]
+          }
+        },
+        {
+          "key": "field",
+          "title": "Find the input",
+          "prompt": "Which part of the upload request does the server trust for the stored name?",
+          "check": {
+            "answer": [
+              "filename",
+              "file name",
+              "the filename"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
