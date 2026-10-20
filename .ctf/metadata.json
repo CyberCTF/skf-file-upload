@@ -1,8 +1,11 @@
 {
+  "project_name": "cyberlabs-skf-file-upload",
+  "slug": "skf-file-upload",
   "title": "OWASP SKF Unrestricted File Upload",
   "description": "A Flask page that saves uploaded files under uploads/ with the file name the client sends, checking only the extension against a list that includes html.",
-  "question": "Abuse the unrestricted file upload and retrieve the flag stored in /ctf/flag on the server.",
-  "category": "WEB",
+  "category": "web",
   "difficulty": 2,
-  "evidence_kind": "SECRET"
+  "evidence_kind": "SECRET",
+  "capabilities": [],
+  "question": "Abuse the unrestricted file upload and retrieve the flag stored in /ctf/flag on the server."
 }
